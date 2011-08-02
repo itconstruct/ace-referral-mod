@@ -23,6 +23,7 @@ include($phpbb_root_path . 'common.' . $phpEx);
 $user->session_begin();
 $auth->acl($user->data);
 $user->setup();
+$user->add_lang('mods/info_acp_arm_invitation_settings');
 
 if (!file_exists($phpbb_root_path . 'umil/umil_auto.' . $phpEx))
 {

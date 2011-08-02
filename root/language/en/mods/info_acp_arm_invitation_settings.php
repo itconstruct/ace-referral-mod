@@ -37,14 +37,14 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'ACP_IAF_TITLE'							=> 'Invite A Friend',
-	'ACP_IAF_INVITATION_SETTINGS'			=> 'Invitation settings',
+	'ACP_IAF_TITLE'							=> 'ACE Referral Mod',
+	'ACP_IAF_INVITATION_SETTINGS'			=> 'Referral settings',
 	'ACP_IAF_INVITATION_SETTINGS_EXPLAIN'	=> 'Here you can set all default settings for the invitations which users can send to their friends.',
 	'ACP_IAF_REFERRAL_SETTINGS'				=> 'Referral settings',
 	'ACP_IAF_REFERRAL_SETTINGS_EXPLAIN'		=> 'Referrals are users associated to others who have referred them to your board by sending an invitation or being specified as their referrer during the registration process. Here you can configure the referral features and determine how they integrate with the invitations.',
 	'ACP_IAF_TEMPLATES'						=> 'Template settings',
 	'ACP_IAF_TEMPLATES_EXPLAIN'				=> 'Here you can edit all templates related to the referrals and invitations. You can find both the templates for the confirmation sent to the inviter and the invitation itself below. As for the invitation templates, the user’s message and subject will be embedded into the template by using wildcards in curly braces. For a full list of possible wildcards look at the table below. Please note that you must not enter HTML or BBCode but plain text.',
-	'ACP_IAF_LOG'							=> 'Invitation log',
+	'ACP_IAF_LOG'							=> 'Referral log',
 	'ACP_IAF_LOG_EXPLAIN'					=> 'This lists all actions relating to the invitations which users can send to their friends. Use the form below to search for specific data. You do not need to fill out all fields.',
 	
 	'ACP_INVITATION_LIMITATION_SETTINGS'		=> 'Limitation settings',
