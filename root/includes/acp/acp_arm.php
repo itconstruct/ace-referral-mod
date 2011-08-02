@@ -30,7 +30,7 @@ class acp_invite
 		global $config, $phpbb_root_path, $phpbb_admin_path;
 
 		include ($phpbb_root_path . 'includes/functions_user.' . $phpEx);
-		include ($phpbb_root_path . 'includes/functions_invite.' . $phpEx);
+		include ($phpbb_root_path . 'includes/functions_arm.' . $phpEx);
 		$user->add_lang(array('mods/info_acp_invite', 'acp/board', 'acp/email'));
 
 		$invite	= new invite();

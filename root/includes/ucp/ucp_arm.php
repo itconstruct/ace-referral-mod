@@ -30,7 +30,7 @@ class ucp_invite
 		global $config, $db, $user, $auth, $template;
 		global $phpbb_admin_path, $phpbb_root_path, $phpEx;
 
-		include($phpbb_root_path . 'includes/functions_invite.' . $phpEx);
+		include($phpbb_root_path . 'includes/functions_arm.' . $phpEx);
 		$user->add_lang(array('acp/email'));
 
 		$invite			= new invite();

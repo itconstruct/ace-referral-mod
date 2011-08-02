@@ -55,7 +55,7 @@ $version_config_name = 'invite_version';
 * 'UNINSTALL_' . $mod_name
 * 'UNINSTALL_' . $mod_name . '_CONFIRM'
 */
-$language_file = 'mods/info_acp_misc_iaf';
+$language_file = 'mods/info_acp_arm_misc';
 
 /*
 * The array of versions and actions within each.

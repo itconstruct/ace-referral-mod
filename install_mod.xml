@@ -199,17 +199,17 @@ This mod continues on from Bycoja's Invite a Friend Mod at v0.6.1]]>
 		<link-group>
 			<link type="language" href="contrib/languages/de.xml" lang="en">German Language</link>
 			<link type="language" href="contrib/languages/tr.xml" lang="en">Turkish Language</link>
-			<link type="template" href="contrib/templates/subsilver2.xml" lang="en">Subsilver2</link>
+			<link type="template" href="contrib/subsilver2/subsilver2.xml" lang="en">Subsilver2</link>
 		</link-group>
 	</header>
 
 	<action-group>
 		<copy>
 			<file from="root/includes/functions_arm.php" to="includes/functions_arm.php" />
-			<file from="root/includes/acp/info/arm_acp.php" to="includes/acp/info/arm_acp.php" />
-			<file from="root/includes/acp/arm_acp.php" to="includes/acp/arm_acp.php" />
-			<file from="root/includes/ucp/info/arm_ucp.php" to="includes/ucp/info/arm_ucp.php" />
-			<file from="root/includes/ucp/arm_ucp.php" to="includes/ucp/arm_ucp.php" />
+			<file from="root/includes/acp/info/acp_arm.php" to="includes/acp/info/acp_arm.php" />
+			<file from="root/includes/acp/acp_arm.php" to="includes/acp/acp_arm.php" />
+			<file from="root/includes/ucp/info/ucp_arm.php" to="includes/ucp/info/ucp_arm.php" />
+			<file from="root/includes/ucp/ucp_arm.php" to="includes/ucp/ucp_arm.php" />
 			<file from="root/adm/mods/arm_check_version.php" to="adm/mods/arm_check_version.php" />
 			<file from="root/adm/style/acp_arm_invitation_settings.html" to="adm/style/acp_arm_invitation_settings.html" />
 			<file from="root/adm/style/acp_arm_log.html" to="adm/style/acp_arm_log.html" />
@@ -224,10 +224,10 @@ This mod continues on from Bycoja's Invite a Friend Mod at v0.6.1]]>
 			<file from="root/language/en/mods/info_acp_arm_referral_settings.php" to="language/en/mods/info_acp_arm_referral_settings.php" />
 			<file from="root/language/en/mods/info_acp_arm_templates.php" to="language/en/mods/info_acp_arm_templates.php" />
 			<file from="root/language/en/mods/info_ucp_arm_compose.php" to="language/en/mods/info_ucp_arm_compose.php" />
-			<file from="root/language/en/mods/info_ucparm_.php" to="language/en/mods/info_ucp_arm_log.php" />
+			<file from="root/language/en/mods/info_ucp_arm_log.php" to="language/en/mods/info_ucp_arm_log.php" />
 			<file from="root/language/en/mods/info_ucp_arm_pending_regs.php" to="language/en/mods/info_ucp_arm_pending_regs.php" />
-			<file from="root/language/en/mods/arm_misc.php" to="language/en/mods/arm_misc.php" />
-			<file from="root/language/en/mods/arm_permissions.php" to="language/en/mods/arm_permissions.php" />
+			<file from="root/language/en/mods/info_acp_arm_misc.php" to="language/en/mods/info_acp_arm_misc.php" />
+			<file from="root/language/en/mods/permissions_arm.php" to="language/en/mods/permissions_arm.php" />
 			<file from="root/language/en/email/arm_invitation_0.txt" to="language/en/email/arm_invitation_0.txt" />
 			<file from="root/language/en/email/arm_referral_0.txt" to="language/en/email/arm_referral_0.txt" />
 			<file from="root/language/en/email/arm_referral_1.txt" to="language/en/email/arm_referral_1.txt" />
@@ -252,7 +252,7 @@ define('LOG_INVITE', 				4);]]></action>
 				<find><![CDATA[		// Inactive reason/account?]]></find>
 				<action type="before-add"><![CDATA[		if (!class_exists('invite'))
 		{
-			include($phpbb_root_path . 'includes/functions_invite.' . $phpEx);
+			include($phpbb_root_path . 'includes/functions_arm .' . $phpEx);
 		}
 		$invite	= new invite();
 		$invite_row = $invite->profile_fields(array(), $user_id);
@@ -262,7 +262,7 @@ define('LOG_INVITE', 				4);]]></action>
 				<find><![CDATA[		$sql_select = $sql_where_data = $sql_from = $sql_where = $order_by = '';]]></find>
 				<action type="after-add"><![CDATA[		if (!class_exists('invite'))
 		{
-			include($phpbb_root_path . 'includes/functions_invite.' . $phpEx);
+			include($phpbb_root_path . 'includes/functions_arm .' . $phpEx);
 		}
 		$user->add_lang('mods/info_acp_invite');
 
@@ -364,7 +364,7 @@ define('LOG_INVITE', 				4);]]></action>
 	}]]></find>
 				<action type="after-add"><![CDATA[	if (!class_exists('invite'))
 	{
-		include($phpbb_root_path . 'includes/functions_invite.' . $phpEx);
+		include($phpbb_root_path . 'includes/functions_arm .' . $phpEx);
 	}
 	$invite	= new invite();
 	$postrow = $invite->profile_fields($postrow, $poster_id);]]></action>
@@ -385,7 +385,7 @@ define('LOG_INVITE', 				4);]]></action>
 				<find><![CDATA[	define('HEADER_INC', true);]]></find>
 				<action type="after-add"><![CDATA[	if (!class_exists('invite'))
 	{
-		include($phpbb_root_path . 'includes/functions_invite.' . $phpEx);
+		include($phpbb_root_path . 'includes/functions_arm .' . $phpEx);
 	}
 	$invite	= new invite();
 	$invite->header_template();]]></action>
@@ -417,7 +417,7 @@ define('LOG_INVITE', 				4);]]></action>
 		}]]></find>
 				<action type="after-add"><![CDATA[		if (!class_exists('invite'))
 		{
-			include($phpbb_root_path . 'includes/functions_invite.' . $phpEx);
+			include($phpbb_root_path . 'includes/functions_arm .' . $phpEx);
 		}
 		$user->add_lang('mods/info_ucp_invite');
 
