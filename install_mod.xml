@@ -205,23 +205,35 @@ This mod continues on from Bycoja's Invite a Friend Mod at v0.6.1]]>
 
 	<action-group>
 		<copy>
-			<file from="root/includes/functions_invite.php" to="includes/functions_invite.php" />
-			<file from="root/includes/acp/info/acp_invite.php" to="includes/acp/info/acp_invite.php" />
-			<file from="root/includes/acp/acp_invite.php" to="includes/acp/acp_invite.php" />
-			<file from="root/includes/ucp/info/ucp_invite.php" to="includes/ucp/info/ucp_invite.php" />
-			<file from="root/includes/ucp/ucp_invite.php" to="includes/ucp/ucp_invite.php" />
-			<file from="root/adm/mods/invite_check_version.php" to="adm/mods/invite_check_version.php" />
-			<file from="root/adm/style/acp_invite.html" to="adm/style/acp_invite.html" />
-			<file from="root/adm/style/acp_invite_log.html" to="adm/style/acp_invite_log.html" />
-			<file from="root/adm/style/acp_invite_templates.html" to="adm/style/acp_invite_templates.html" />
-			<file from="root/styles/prosilver/template/ucp_invite_invite.html" to="styles/prosilver/template/ucp_invite_invite.html" />
-			<file from="root/language/en/mods/info_acp_invite.php" to="language/en/mods/info_acp_invite.php" />
-			<file from="root/language/en/mods/info_ucp_invite.php" to="language/en/mods/info_ucp_invite.php" />
-			<file from="root/language/en/email/confirm_subject.txt" to="language/en/email/confirm_subject.txt" />
-			<file from="root/language/en/email/confirm_message.txt" to="language/en/email/confirm_message.txt" />
-			<file from="root/language/en/email/invite_subject.txt" to="language/en/email/invite_subject.txt" />
-			<file from="root/language/en/email/invite_message.txt" to="language/en/email/invite_message.txt" />
-			<file from="root/install/invitation.php" to="install/invitation.php" />
+			<file from="root/includes/functions_arm.php" to="includes/functions_arm.php" />
+			<file from="root/includes/acp/info/arm_acp.php" to="includes/acp/info/arm_acp.php" />
+			<file from="root/includes/acp/arm_acp.php" to="includes/acp/arm_acp.php" />
+			<file from="root/includes/ucp/info/arm_ucp.php" to="includes/ucp/info/arm_ucp.php" />
+			<file from="root/includes/ucp/arm_ucp.php" to="includes/ucp/arm_ucp.php" />
+			<file from="root/adm/mods/arm_check_version.php" to="adm/mods/arm_check_version.php" />
+			<file from="root/adm/style/acp_arm_invitation_settings.html" to="adm/style/acp_arm_invitation_settings.html" />
+			<file from="root/adm/style/acp_arm_log.html" to="adm/style/acp_arm_log.html" />
+			<file from="root/adm/style/acp_arm_pending_regs.html" to="adm/style/acp_arm_pending_regs.html" />
+			<file from="root/adm/style/acp_arm_referral_settings.html" to="adm/style/acp_arm_referral_settings.html" />
+			<file from="root/adm/style/acp_arm_templates.html" to="adm/style/acp_arm_templates.html" />
+			<file from="root/styles/prosilver/template/ucp_arm_compose.html" to="styles/prosilver/template/ucp_arm_compose.html" />
+			<file from="root/styles/prosilver/template/ucp_arm_log.html" to="styles/prosilver/template/ucp_arm_log.html" />
+			<file from="root/styles/prosilver/template/ucp_arm_pending_regs.html" to="styles/prosilver/template/ucp_arm_pending_regs.html" />
+			<file from="root/language/en/mods/info_acp_arm_invitation_settings.php" to="language/en/mods/info_acp_arm_invitation_settings.php" />
+			<file from="root/language/en/mods/info_acp_arm_pending_regs.php" to="language/en/mods/info_acp_arm_pending_regs.php" />
+			<file from="root/language/en/mods/info_acp_arm_referral_settings.php" to="language/en/mods/info_acp_arm_referral_settings.php" />
+			<file from="root/language/en/mods/info_acp_arm_templates.php" to="language/en/mods/info_acp_arm_templates.php" />
+			<file from="root/language/en/mods/info_ucp_arm_compose.php" to="language/en/mods/info_ucp_arm_compose.php" />
+			<file from="root/language/en/mods/info_ucparm_.php" to="language/en/mods/info_ucp_arm_log.php" />
+			<file from="root/language/en/mods/info_ucp_arm_pending_regs.php" to="language/en/mods/info_ucp_arm_pending_regs.php" />
+			<file from="root/language/en/mods/arm_misc.php" to="language/en/mods/arm_misc.php" />
+			<file from="root/language/en/mods/arm_permissions.php" to="language/en/mods/arm_permissions.php" />
+			<file from="root/language/en/email/arm_invitation_0.txt" to="language/en/email/arm_invitation_0.txt" />
+			<file from="root/language/en/email/arm_referral_0.txt" to="language/en/email/arm_referral_0.txt" />
+			<file from="root/language/en/email/arm_referral_1.txt" to="language/en/email/arm_referral_1.txt" />
+			<file from="root/language/en/email/arm_successful_invitation_0.txt" to="language/en/email/arm_successful_invitation_0.txt" />
+			<file from="root/language/en/email/arm_successful_invitation_1.txt" to="language/en/email/arm_successful_invitation_1.txt" />
+			<file from="root/install/index.php" to="install/index.php" />
 			<file from="root/umil/*.*" to="umil/*.*" />
 		</copy>
 
