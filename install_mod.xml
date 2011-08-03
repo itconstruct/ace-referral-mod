@@ -419,7 +419,7 @@ define('LOG_INVITE', 				4);]]></action>
 		{
 			include($phpbb_root_path . 'includes/functions_arm .' . $phpEx);
 		}
-		$user->add_lang('mods/info_ucp_invite');
+		$user->add_lang('mods/info_ucp_arm_compose');
 
 		$invite			= new invite();
 		$register_key	= request_var('key', '', true);

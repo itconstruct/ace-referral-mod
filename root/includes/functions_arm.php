@@ -878,7 +878,7 @@ class invite
 		{
 			return;
 		}
-		$user->add_lang('mods/info_ucp_invite');
+		$user->add_lang('mods/info_ucp_arm_compose');
 
 		$template->assign_vars(array(
 			'U_INVITE_A_FRIEND'		=> append_sid("{$phpbb_root_path}ucp.$phpEx", 'i=invite&amp;mode=compose'),
